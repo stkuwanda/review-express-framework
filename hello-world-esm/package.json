@@ -1,0 +1,16 @@
+{
+  "name": "hello-world-esm",
+  "version": "0.1.0",
+  "description": "Simple express server, serving a text message to client, using ESM modules.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Simbarashe Tanaka Kuwanda",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
