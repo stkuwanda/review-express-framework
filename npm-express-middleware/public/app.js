@@ -1,4 +1,4 @@
-const form = document.querySelector('form');
+const form = document.querySelector('#json-form');
 const url = 'http://localhost:3000/form';
 
 async function makePostRequest(url, data) {
