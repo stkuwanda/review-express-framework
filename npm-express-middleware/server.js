@@ -10,11 +10,21 @@ const customFormidableMiddleware = formidable();
 
 const app = express();
 
-app.use(bodyParserMiddleware, jsonParserMiddleware, serveStaticFilesMiddleware, customFormidableMiddleware);
+app.use(
+	bodyParserMiddleware,
+	jsonParserMiddleware,
+	serveStaticFilesMiddleware,
+	customFormidableMiddleware
+);
 
 app.post('/form', (req, res) => {
 	console.log(req.body);
 	res.json(req.body);
+});
+
+app.use((err, req, res, next) => {
+	console.error(err.stack);
+	res.status(500).send('internal server error');
 });
 
 app.listen(3000, () => {
