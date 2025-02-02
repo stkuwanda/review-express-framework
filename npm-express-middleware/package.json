@@ -1,0 +1,16 @@
+{
+  "name": "npm-express-middleware",
+  "version": "0.1.0",
+  "description": "Project demoes the usage of various middleware from express.js and npm packages.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Simbarashe Tanaka Kuwanda",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
